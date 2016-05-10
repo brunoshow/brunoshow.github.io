@@ -1,11 +1,12 @@
 ---
 layout: project
-title:  "YOUR PROJECT NAME"
+title:  "Universo Medico"
+subtitle:  "App iOS"
 date:   2014-04-25 16:54:46
 author: Marcel Newman
 categories:
 - project
-img: portfolio_08.jpg
+img: universo-medico-Card.jpg
 thumb: thumb02.jpg
 carousel:
 - single01.jpg

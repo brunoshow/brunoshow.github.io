@@ -1,11 +1,12 @@
 ---
 layout: project
-title:  "YOUR PROJECT NAME"
+title:  "Bayer - Glicocare"
+subtitle:  "App iOS"
 date:   2014-04-25 16:54:46
 author: Marcel Newman
 categories:
 - project
-img: portfolio_04.jpg
+img: Glicocare-Card.png
 thumb: thumb02.jpg
 carousel:
 - single01.jpg

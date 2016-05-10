@@ -93,6 +93,55 @@ a:focus {
 	text-align: center
 }
 
+.roudedMask {
+  background-size: 100%;
+  border-radius: 50%;
+  color: transparent;
+}
+
+/*--------------------------------------------------
+    [Border radius]
+----------------------------------------------------*/
+.radius-0 {
+  border-radius: 0 !important;
+}
+
+.radius-3 {
+  border-radius: 3px !important;
+}
+
+.radius-5 {
+  border-radius: 5px !important;
+}
+
+.radius-6 {
+  border-radius: 6px !important;
+}
+
+.radius-7 {
+  border-radius: 7px !important;
+}
+
+.radius-8 {
+  border-radius: 8px !important;
+}
+
+.radius-9 {
+  border-radius: 9px !important;
+}
+
+.radius-10 {
+  border-radius: 10px !important;
+}
+
+.radius-50 {
+  border-radius: 50px !important;
+}
+
+.radius-circle {
+  border-radius: 50% !important;
+}
+
 /*	################################################################
 	BOOTSTRAP MODIFICATIONS & TWEAKS
 ################################################################# */
@@ -129,6 +178,10 @@ a:focus {
 .navbar-default {
 	background-color: {{ site.colors.secondary }};
 	border-color: transparent;
+}
+
+.navbar-default.transparent{
+    background-color: rgba(56, 68, 82, 0.38);
 }
 
 .dropdown-menu {
@@ -216,14 +269,15 @@ a:focus {
 ################################################################# */
 
 #headerwrap {
-	background-color: {{ site.colors.primary }};
+	background-image: url('https://d2gn4xht817m0g.cloudfront.net/p/profiles/cover_photos/background/002/186/696/2186696-08b66cf1310d2e6738133b6362b3e018a1923f87.jpg?1462102957');
 	min-height: 0px;
 	padding-top: 100px;
 	padding-bottom: 50px;
 	text-align: center;
+	background-size: cover;
 }
 
-#headerwrap h3, h5 {
+#headerwrap h3, #headerwrap h4, #headerwrap h5 {
 	color: white;
 	font-weight: 400;
 }
@@ -295,6 +349,81 @@ a:focus {
 	background-color:{{ site.colors.primary }};
 	background-color:rgba({{ site.colors.primary_rgb }},.9);
 	text-align:center;
+}
+
+/*Portfolio Bruno*/
+#portfolio .portfolio-item {
+  margin: 0 0 15px;
+  right: 0;
+}
+#portfolio .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  background: rgba(100, 149, 237, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+  opacity: 1;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: white;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+  margin-top: -12px;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+  margin: 0;
+}
+#portfolio .portfolio-item .portfolio-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+  padding: 25px;
+}
+#portfolio .portfolio-item .portfolio-caption h4 {
+  text-transform: none;
+  margin: 0;
+}
+#portfolio .portfolio-item .portfolio-caption p {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  margin: 0;
+}
+#portfolio * {
+  z-index: 2;
+}
+#portfolio {
+	background-color: {{ site.colors.primary }};
+}
+
+#portfolio h3.text-muted {
+    color: #FFF;
+}
+
+@media (min-width: 767px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
 }
 
 /* Testimonials Wrap */
@@ -377,6 +506,36 @@ a:focus {
 
 #footerwrap i:hover {
 	color: {{ site.colors.primary }}
+}
+
+/* Tags */
+.about-tags {
+  margin: -5px 0 0;
+}
+
+.about-tags > li {
+  padding: 5px 2px;
+}
+
+.about-tags > li > a {
+  display: inline-block;
+  font-size: 14px;
+  color: {{ site.colors.secondary }};
+  border: 1px solid #bfbfbf;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition-duration: 200ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+.about-tags > li > a:hover {
+  color: #fff;
+  background: {{ site.colors.primary }};
+  border-color: {{ site.colors.primary }};
+  transition-duration: 200ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
 /*	################################################################
@@ -504,4 +663,18 @@ a.anchor{
     position: relative; 
     top: -80px; 
     visibility: hidden;
+}
+/* About Page */
+.languageIcons #enIcon {
+    background-image: url('../img/about/en.png');
+}
+.languageIcons #brIcon {
+    background-image: url('../img/about/br.png');
+}
+/*Contact*/
+.embed .confirm a.start-cta {
+	display: none!important;
+	height: 0px!important;
+	width: 0px!important;
+	opacity: 0!important;
 }
