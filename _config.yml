@@ -1,7 +1,7 @@
 ### GENERAL SETTINGS ###
 
 # Site settings
-title: "BRUNO SHOW - Mobile Developer, Xamarin C# and Native (iOS & Android)"
+title: "Bruno - Mobile Developer, Xamarin C# and Native (iOS & Android)"
 description: "Bruno Rosa Mobile Developer, Xamarin C# and Native (iOS & Android), Information System Bachelor (BSc CIS), working in Berlin."
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "" #important: start with /

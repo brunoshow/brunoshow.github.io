@@ -10,10 +10,12 @@
 		var contentNav = $('#headerwrap').height();
 		var stickyNav = function () {
 		    var scrollTop = $(window).scrollTop();
-		    if (scrollTop > contentNav/2) {
+		    if (scrollTop > contentNav/1.2) {
 		        $('.navbar').removeClass("transparent");
+		        document.getElementById("nav-title").innerHTML = document.title;
 		    } else {;
 		        $('.navbar').addClass("transparent");
+		        document.getElementById("nav-title").innerHTML = "BRUNO SHOW";
 		    }
 		};
 		stickyNav();
