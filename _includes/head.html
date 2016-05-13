@@ -1,11 +1,19 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="viewport" content="{{ site.description }}">
     <meta name="author" content="">
     <link rel="shortcut icon" href="{{ "/assets/ico/favicon.ico" | prepend: site.baseurl }}">
     <link rel="image_src" href="{{ "/assets/img/thumb.jpeg" | prepend: site.baseurl }}" />
+
+    <meta name="page_title" content="{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}">
+    <meta name="description" content="{{ site.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:image" content="{{ "/assets/img/thumb.jpeg" | prepend: site.baseurl }}">
+    <meta property="og:url" content="{{ site.url }}">
+
     <title>{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
 
     <!-- Bootstrap core CSS -->
